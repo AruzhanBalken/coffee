@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#f7eac1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cof" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:text="Choose Toppings:"
+            android:textColor="#040000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp">
+
+            <CheckBox
+                android:id="@+id/cream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220px"
+                android:text="Cream"
+                android:textColor="#090101"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/choco"
+                android:layout_width="171dp"
+                android:layout_height="43dp"
+                android:text="Chocolate"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330px"
+            android:text="Quantity:"
+            android:textColor="#0B0000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="62dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:onClick="@android:string/ok"
+                android:text="-"
+                android:textColor="#100101"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="60dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="100dp"
+                android:text="+"
+                android:textColor="#100101"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="129dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="129dp"
+            android:clickable="true"
+            android:onClick="@android:string/ok"
+            android:text="Order"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="314dp"
+            android:layout_height="101dp"
+            android:layout_marginLeft="80dp"
+            android:text="Order summary"
+            android:textAllCaps="true"
+            android:textColor="#130101"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="#120101" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
